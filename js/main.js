@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // Fase 5
 // Ahora ya tenemos un poco más controlado el invento y parece que podemos controlar diferentes resultados de funciones según los valores que le pasemos a sus parámetros…
@@ -29,19 +29,19 @@
 
 const myWordList = [
   {
-    text: 'Pencil',
+    text: "Pencil",
     total: 6
   },
   {
-    text: 'Thermo',
+    text: "Thermo",
     total: 2
   },
   {
-    text: 'TV',
+    text: "TV",
     total: 8
   },
   {
-    text: 'Phone',
+    text: "Phone",
     total: 4
   }
 ];
@@ -50,28 +50,28 @@ function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-function writeThis(word){
+function writeThis(word) {
   const myRandomNumber = getRandomNumber(10);
-  for(let i = 0; i < myRandomNumber ; i++){
-    console.log(word, myRandomNumber)
+  for (let i = 0; i < myRandomNumber; i++) {
+    console.log(word, myRandomNumber);
   }
 }
-writeThis('Patata');
-writeThis('Aguacate');
-writeThis('Pizza');
+writeThis("Patata");
+writeThis("Aguacate");
+writeThis("Pizza");
 
-function writeMyArray(arr){
-  const myRandomNumber = getRandomNumber(10);
+function writeMyArray(arr) {
   for (const item of myWordList) {
-    console.log(item.text, myRandomNumber)
+    console.log(item.text);
   }
 }
-writeMyArray('myWordList',);
+
+writeThis('myWordList');
 
 // function writeMyArray(arr){
-//   const number = writeThis(arr);
+//   const myRandomNumber = getRandomNumber(10);
 //   for (const item of myWordList) {
-//     console.log(item.text, number)
+//     console.log(item.text, myRandomNumber)
 //   }
 // }
 // writeMyArray('myWordList',);
