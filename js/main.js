@@ -27,6 +27,7 @@ function writeThis(word){
     console.log(word, myRandomNumber)
   }
 }
+
 writeThis('Patata');
 writeThis('Aguacate');
 writeThis('Pizza');
