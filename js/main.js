@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // Ahora hemos visto que a una función le podemos pasar datos en crudo a través de los parámetros. Además podríamos pasar estos datos si ya los tuviésemos almacenados en constantes e incluso funciones que nos devuelvan datos!!!
 
@@ -17,17 +17,33 @@
 // writeThis('aguacate'?);
 // writeThis('pizza',?);
 
+//opcion coco
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-function writeThis(word){
+function writeThis(word) {
   const myRandomNumber = getRandomNumber(10);
-  for(let i = 0; i < myRandomNumber ; i++){
-    console.log(word, myRandomNumber)
+  for (let i = 0; i < myRandomNumber; i++) {
+    console.log(word, myRandomNumber);
   }
 }
 
-writeThis('Patata');
-writeThis('Aguacate');
-writeThis('Pizza');
+writeThis("Patata");
+writeThis("Aguacate");
+writeThis("Pizza");
+
+//opcion marta
+function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
+}
+
+function writeThis(word, number) {
+  for (let i = 0; i < number; i++) {
+    console.log(word);
+  }
+}
+
+writeThis("patata", getRandomNumber(11));
+writeThis("aguacate", getRandomNumber(11));
+writeThis("Pizza", getRandomNumber(11));
