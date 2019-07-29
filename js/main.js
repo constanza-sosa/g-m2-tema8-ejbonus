@@ -1,21 +1,50 @@
 'use strict';
 
-// Ahora hemos visto que a una función le podemos pasar datos en crudo a través de los parámetros. Además podríamos pasar estos datos si ya los tuviésemos almacenados en constantes e incluso funciones que nos devuelvan datos!!!
+// Fase 5
+// Ahora ya tenemos un poco más controlado el invento y parece que podemos controlar diferentes resultados de funciones según los valores que le pasemos a sus parámetros…
 
-// Qué locura! Cómo es eso de la funciones? Vamos a rescatar a nuestra querida getRandomNumber() del ejercicio de evaluación intermedia, para quien no se acuerde era algo como:
+// Alguien se ha dado cuenta de que estamos escribiendo las palabras que queremos y ha dicho: Ey, yo no tengo una o dos palabras, pero tengo una lista de palabras y números. ¿Me la podríais escribir?
 
-// function getRandomNumber(max) {
-//   return Math.ceil(Math.random() * max);
-// }
-// Esta función generaba un número aleatorio de 0 al número que le pasemos por parámetro.
+// La lista es la siguiente:
 
-// Qué le tendríamos que escribir en nuestra función writeThis para que nos escribiese las palabras que le pasamos un número random de veces de 0 a 10?
+// const myWordList =  [
+//   {
+//     text: 'Pencil',
+//     total: 6
+//   },
+//   {
+//     text: 'Thermo',
+//     total: 2
+//   },
+//   {
+//     text: 'TV',
+//     total: 8
+//   },
+//   {
+//     text: 'Phone',
+//     total: 4
+//   }
+// ];
+// Para ello crearemos una nueva función writeMyArray que aceptará como parámetro un array, lo recorrerá y escribirá cada palabra el número de veces indicado utilizando nuestra función writeThis.
 
-// Pista:
-
-// writeThis('patata',?);
-// writeThis('aguacate'?);
-// writeThis('pizza',?);
+const myWordList = [
+  {
+    text: 'Pencil',
+    total: 6
+  },
+  {
+    text: 'Thermo',
+    total: 2
+  },
+  {
+    text: 'TV',
+    total: 8
+  },
+  {
+    text: 'Phone',
+    total: 4
+  }
+];
 
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
@@ -27,7 +56,22 @@ function writeThis(word){
     console.log(word, myRandomNumber)
   }
 }
-
 writeThis('Patata');
 writeThis('Aguacate');
 writeThis('Pizza');
+
+function writeMyArray(arr){
+  const myRandomNumber = getRandomNumber(10);
+  for (const item of myWordList) {
+    console.log(item.text, myRandomNumber)
+  }
+}
+writeMyArray('myWordList',);
+
+// function writeMyArray(arr){
+//   const number = writeThis(arr);
+//   for (const item of myWordList) {
+//     console.log(item.text, number)
+//   }
+// }
+// writeMyArray('myWordList',);
