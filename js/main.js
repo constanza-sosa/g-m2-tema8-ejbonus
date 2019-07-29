@@ -27,51 +27,90 @@
 // ];
 // Para ello crearemos una nueva función writeMyArray que aceptará como parámetro un array, lo recorrerá y escribirá cada palabra el número de veces indicado utilizando nuestra función writeThis.
 
-const myWordList = [
-  {
-    text: "Pencil",
-    total: 6
-  },
-  {
-    text: "Thermo",
-    total: 2
-  },
-  {
-    text: "TV",
-    total: 8
-  },
-  {
-    text: "Phone",
-    total: 4
-  }
-];
+// const myWordList = [
+//   {
+//     text: "Pencil",
+//     total: 6
+//   },
+//   {
+//     text: "Thermo",
+//     total: 2
+//   },
+//   {
+//     text: "TV",
+//     total: 8
+//   },
+//   {
+//     text: "Phone",
+//     total: 4
+//   }
+// ];
+
+// function getRandomNumber(max) {
+//   return Math.ceil(Math.random() * max);
+// }
+
+// function writeThis(word) {
+//   const myRandomNumber = getRandomNumber(10);
+//   for (let i = 0; i < myRandomNumber; i++) {
+//     console.log(word, myRandomNumber);
+//   }
+// }
+// writeThis("Patata");
+// writeThis("Aguacate");
+// writeThis("Pizza");
+
+// function writeMyArray(arr) {
+//   for (const item of myWordList) {
+//     console.log(item.text);
+//   }
+// }
+
+// writeThis('myWordList');
+
+// // function writeMyArray(arr){
+// //   const myRandomNumber = getRandomNumber(10);
+// //   for (const item of myWordList) {
+// //     console.log(item.text, myRandomNumber)
+// //   }
+// // }
+// // writeMyArray('myWordList',);
 
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-function writeThis(word) {
-  const myRandomNumber = getRandomNumber(10);
-  for (let i = 0; i < myRandomNumber; i++) {
-    console.log(word, myRandomNumber);
-  }
-}
-writeThis("Patata");
-writeThis("Aguacate");
-writeThis("Pizza");
 
-function writeMyArray(arr) {
-  for (const item of myWordList) {
-    console.log(item.text);
+function writeThis(word, number) {
+  for (let i = 0; i < number; i++) {
+      console.log(word);
   }
+
 }
 
-writeThis('myWordList');
+const myWordList = [{
+      text: 'Pencil',
+      total: 6
+  },
+  {
+      text: 'Thermo',
+      total: 2
+  },
+  {
+      text: 'TV',
+      total: 8
+  },
+  {
+      text: 'Phone',
+      total: 4
+  }
+];
 
-// function writeMyArray(arr){
-//   const myRandomNumber = getRandomNumber(10);
-//   for (const item of myWordList) {
-//     console.log(item.text, myRandomNumber)
-//   }
-// }
-// writeMyArray('myWordList',);
+function writeMyArray(array) {
+  for (const item of array) {
+      writeThis(item.text, item.total);
+  }
+}
+
+
+writeMyArray(myWordList);
