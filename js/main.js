@@ -1,19 +1,32 @@
 'use strict';
 
-// Joé, si puedo pasar a mi función la palabra que quiero escribir, pues voy a querer más: ahora mismo si le paso una palabra me la escribe 10 veces, pero y si quisiese que me la escribiese diferente número de veces cada vez?
+// Ahora hemos visto que a una función le podemos pasar datos en crudo a través de los parámetros. Además podríamos pasar estos datos si ya los tuviésemos almacenados en constantes e incluso funciones que nos devuelvan datos!!!
 
-// Qué tendría que hacer para que al llamar a mi función de estas formas escribiese las palabras el numero de veces que le diga?
+// Qué locura! Cómo es eso de la funciones? Vamos a rescatar a nuestra querida getRandomNumber() del ejercicio de evaluación intermedia, para quien no se acuerde era algo como:
 
-// ten('patata', 10);
-// ten('aguacate', 7);
-// ten('Pizza', 50);
-// Una vez conseguido renombraremos la función ten a writeThis;
+// function getRandomNumber(max) {
+//   return Math.ceil(Math.random() * max);
+// }
+// Esta función generaba un número aleatorio de 0 al número que le pasemos por parámetro.
+
+// Qué le tendríamos que escribir en nuestra función writeThis para que nos escribiese las palabras que le pasamos un número random de veces de 0 a 10?
+
+// Pista:
+
+// writeThis('patata',?);
+// writeThis('aguacate'?);
+// writeThis('pizza',?);
+
+function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
+}
 
 function writeThis(word){
-  for(let i = 1; i < 51 ; i++){
-    console.log(word, i)
+  const myRandomNumber = getRandomNumber(10);
+  for(let i = 0; i < myRandomNumber ; i++){
+    console.log(word, myRandomNumber)
   }
 }
-writeThis('Patata', 10);
-writeThis('Aguacate', 7);
-writeThis('Pizza', 50);
+writeThis('Patata');
+writeThis('Aguacate');
+writeThis('Pizza');
