@@ -66,4 +66,5 @@ function writeThis(word, maxNumber) {
 
 writeThis('patata', getRandomNumber(10));
 writeThis('aguacate', getRandomNumber(30));
-writeThis('Pizza', getRandomNumber(50));
+writeThis('Pizza', 6); 
+//Se puede usar la fucnion de distintas formas
