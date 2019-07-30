@@ -11,6 +11,8 @@
 function ten(word){
   for(let i = 0; i < 10 ; i++){
     console.log(word)
+    //para que loe escriba cada vez
+    // console.log(i, word)
   }
 }
 ten('Patata');
