@@ -9,9 +9,9 @@
 // ten('Pizza', 50);
 // Una vez conseguido renombraremos la función ten a writeThis;
 
-function writeThis(word){
-  for(let i = 1; i < 51 ; i++){
-    console.log(word, i)
+function writeThis(word, maxNumber){
+  for(let i = 0; i < maxNumber ; i++){
+    console.log(word)
   }
 }
 writeThis('Patata', 10);
