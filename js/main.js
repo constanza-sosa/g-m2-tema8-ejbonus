@@ -18,3 +18,13 @@ function ten(word){
 ten('Patata');
 ten('Aguacate');
 ten('Pizza');
+
+//Para escribirlo de otra forma
+// function ten(a, b, c){
+//   for(let i = 0; i < 10 ; i++){
+//     console.log(a, b, c)
+//     //para que loe escriba cada vez
+//     // console.log(i, word)
+//   }
+// }
+// ten('Patata', 'Aguacate', 'Pizza');
