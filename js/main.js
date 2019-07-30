@@ -76,13 +76,10 @@
 // // }
 // // writeMyArray('myWordList',);
 
-function getRandomNumber(max) {
-  return Math.ceil(Math.random() * max);
-}
 
 
-function writeThis(word, number) {
-  for (let i = 0; i < number; i++) {
+function writeThis(word, maxNumber) {
+  for (let i = 0; i < maxNumber; i++) {
       console.log(word);
   }
 
