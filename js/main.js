@@ -8,3 +8,17 @@ function ten(){
   }
 }
 ten();
+
+function eleven(){
+  for(let i = 0; i < 10 ; i++){
+    console.log(i,'patata')
+  }
+}
+eleven();
+
+function twelve(){
+  for(let i = 0; i < 10 ; i++){
+    console.log(`${i},'patata'`)
+  }
+}
+twelve();
