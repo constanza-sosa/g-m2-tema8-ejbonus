@@ -17,33 +17,53 @@
 // writeThis('aguacate'?);
 // writeThis('pizza',?);
 
-//opcion coco
+// //opcion coco
+// function getRandomNumber(max) {
+//   return Math.ceil(Math.random() * max);
+// }
+
+// function writeThis(word) {
+//   const myRandomNumber = getRandomNumber(10);
+//   for (let i = 0; i < myRandomNumber; i++) {
+//     console.log(word, myRandomNumber);
+//   }
+// }
+// SI hago esta opcion, ya no voy a poder utilizar esta función más. 
+
+// writeThis("Patata");
+// writeThis("Aguacate");
+// writeThis("Pizza");
+
+// //opcion marta
+// function getRandomNumber(max) {
+//   return Math.ceil(Math.random() * max);
+// }
+
+// function writeThis(word, number) {
+//   for (let i = 0; i < number; i++) {
+//     console.log(word);
+//   }
+// }
+
+// writeThis("patata", getRandomNumber(11));
+// writeThis("aguacate", getRandomNumber(11));
+// writeThis("Pizza", getRandomNumber(11));
+
+
+//opcion 3: 
+
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-function writeThis(word) {
-  const myRandomNumber = getRandomNumber(10);
-  for (let i = 0; i < myRandomNumber; i++) {
-    console.log(word, myRandomNumber);
-  }
-}
-
-writeThis("Patata");
-writeThis("Aguacate");
-writeThis("Pizza");
-
-//opcion marta
-function getRandomNumber(max) {
-  return Math.ceil(Math.random() * max);
-}
-
-function writeThis(word, number) {
-  for (let i = 0; i < number; i++) {
+function writeThis(word, maxNumber) {
+  for (let i = 0; i < maxNnumber; i++) {
     console.log(word);
   }
 }
+//const randomNumber = getRandomNumber(11)
+//si hacemos esta opción solo nos gernerara un numero para todos los casos
 
-writeThis("patata", getRandomNumber(11));
-writeThis("aguacate", getRandomNumber(11));
-writeThis("Pizza", getRandomNumber(11));
+writeThis('patata', getRandomNumber(10));
+writeThis('aguacate', getRandomNumber(30));
+writeThis('Pizza', getRandomNumber(50));
