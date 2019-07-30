@@ -14,6 +14,22 @@ function writeThis(word, maxNumber){
     console.log(word)
   }
 }
-writeThis('Patata', 10);
+writeThis({texto:'Patata', max:10});
 writeThis('Aguacate', 7);
 writeThis('Pizza', 50);
+
+//otra forma de hacerlo:
+
+function writeThis(paco){
+  for(let i = 0; i < paco.max ; i++){
+    console.log(paco.text)
+  }
+}
+writeThis({text:'Patata', max:10});
+
+// const obj = {
+//   texto: 'Patata',
+//   max: 10
+// }
+
+// writeThis(paco);
